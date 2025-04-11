@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Cv</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  
+    </head>
+    <body>
+    <header></header>
+    <main class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 offset-md-3">
+          <div class="card">
+            <div class="card-header bg-dark text-light"><h4 class="text center">Registra tus Datos</h4></div>
+            <div class="card-body">
+                <h5 class="card-title tect-center">Completar toda la informacion requerida</h5>
+              
+                <div class="mb-4">
+                  <label for="name" class="form-label">Nombre y apellido</label>
+                  <input id="name" type="text" placeholder="Guillermo Doñe" class="form-control">
+                </div>
+
+                <div class="mb-4">
+                  <label for="Direccion" class="form-label">Direccion</label>
+                  <input id="Direccion" type="text" placeholder="Bella vista #800" class="form-control">
+                </div>
+
+                <div class="mb-4">
+                  <label for="correo" class="form-label">Correo</label>
+                  <input id="correo" type="email" placeholder="Usuario@Gmail.com" class="form-control">
+                </div>
+
+                <div class="mb-4">
+                  <label for="telefno" class="form-label">Telefono</label>
+                  <input id="telefono" type="tel" placeholder="809-222-2222" class="form-control">
+                </div>
+
+                <div class="mb-4">
+                  <label for="URL" class="form-label">URL de pagina web</label>
+                  <input id="URL" type="url" placeholder="WWW.CreaTuCvGratis.com" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="resumen" class="form-label">Resumen</label>
+                  <input id="resumen" type="text" placeholder="Soy una persona...." class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="idioma" class="form-label">Idiomas</label>
+                  <input id="idioma" type="text" placeholder="Español,english...." class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="empleo" class="form-label">Empleos</label>
+                  <input id="empleo" type="text" placeholder="Facebook, Amazon,...." class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="educacion" class="form-label">educacion</label>
+                  <input id="educacion" type="text" placeholder="Academico, universitario, ...." class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Skill" class="form-label">Skill</label>
+                  <input id="Skill" type="text" placeholder="Python, Java, ...." class="form-control">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Certificaciones" class="form-label">Certificaciones</label>
+                  <input id="Certificaciones" type="text" placeholder="Nombre de la certificacion" class="form-control">
+                </div>
+
+                <div>
+                  <button onclick="GenerarCv()" type="button" class="btn btn-outline-primary float-end ms-4" >Generar CV</button>
+                  <button onclick="Clear()" type="button" class="btn btn-outline-primary float-end" >Limpiar</button>
+                  
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="col-12 col-sm-12 col-md-3" id="showCards">
+
+          </div>
+        
+
+      </div>
+
+---------------------------------------------------------------------------------------
+<div class="container"  id="Cv"> 
+        <!-- <div class="row">
+          <div class="col-md-4 text-center" >
+            <div class="container">
+              <h1>Jose</h1>
+              
+              <h4>Contactos</h4>
+              <hr />
+              <h5>Direcion:</h5>
+              <p>Bella vista calle 19 # 29<p>
+
+              <h5>Numero telefonico:</h5>
+              <p>809-589-9632</p>
+
+              <h5>Email:</h5>
+              <p>jose13@gmail.com</p> 
+
+              <hr />
+
+              <h5>Lenguajes</h5>
+              <p>Español</p>
+              <p>English</p>
+              <p>Fraces</p>
+              <p>italino</p>
+
+              <h5>Pagina Web:</h5>
+              <p>WWW.jose.com</p>
+
+            </div>
+          </div>
+          <div class="col-md-8">
+            
+            <div class="card mt-4">
+              <h5 class="card-header bg-primary">Descripcion/Resumen</h5>
+              <p>Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado</p>
+            </div>
+            
+              
+      
+            <div class="card mt-4">
+              <div class="card-header bg-primary">
+                <h5>Skill/Habilidades</h5>
+              
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li >Python</li>
+                  <li>Javascript</li>
+                  <li>Java</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <div class="card-header bg-primary">
+                <h5 >Certificaciones</h5>
+              </div>
+              <div>
+                <div class="card-body">
+                  <ul>
+                    <li>Certificacion de Google</li>
+                    <li>Certificacion de freecodecamp</li>
+                    <li>Certificacion de cisco</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <div class="card-header bg-primary">
+                <h5>Experiencias</h5>
+              </div>
+              <div>
+                <div class="card-body">
+                  <ul>
+                    <li>Google</li>
+                    <li>freecodecamp</li>
+                    <li>Cisco</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <div class="card-header bg-primary">
+                <h5>Educacion</h5>
+              </div>
+              <div>
+                <div class="card-body">
+                  <ul>
+                    <li>Google</li>
+                    <li>Polictecnico</li>
+                    <li>Cenapec</li>
+                    <li>Centu</li>
+                    <li>Itla</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mt-4">
+              <div class="card-header bg-primary">
+                <h5>Empleos</h5>
+              </div>
+              <div>
+                <div class="card-body">
+                  <ul>
+                    <li>Google</li>
+                    <li>Facebook</li>
+                    <li>Amazon</li>
+                    <li>Apple</li>
+                    <li>Samsung</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div> -->
+
+      </div>
+---------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <footer></footer>
+  <script src="jquery/jquery-3.6.3.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="site/index/index.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,10 @@
+
+.input-access{
+    border-color: green;
+    border-width: medium;
+}
+
+.input-error{
+    border-color:red;
+    border-width: medium;
+}

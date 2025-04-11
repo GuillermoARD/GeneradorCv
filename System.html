@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro del Itla</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <main>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 offset-md-3">
+              <div class="card">
+                <div class="card-header bg-dark text-light"><h4 class="text center">Registra tus Datos</h4></div>
+                <div class="card-body">
+                    <h5 class="card-title tect-center">Completar toda la informacion requerida</h5>
+                  
+                    <div class="mb-4">
+                      <label for="name" class="form-label">Nombre y apellido</label>
+                      <input id="name" type="text" placeholder="Guillermo Doñe" class="form-control">
+                    </div>
+    
+                    <div class="mb-4">
+                      <label for="Direccion" class="form-label">Provincia</label>
+                      <input id="Direccion" type="text" placeholder="Santo Domingo" class="form-control">
+                    </div>
+    
+                    <div class="mb-4">
+                      <label for="correo" class="form-label">Ciudad</label>
+                      <input id="correo" type="email" placeholder="" class="form-control">
+                    </div>
+    
+                    <div class="mb-4">
+                      <label for="telefno" class="form-label">Sector</label>
+                      <input id="telefono" type="tel" placeholder="809-222-2222" class="form-control">
+                    </div>
+    
+                    <div class="mb-4">
+                      <label for="URL" class="form-label">URL de pagina web</label>
+                      <input id="URL" type="url" placeholder="Bella vista" class="form-control">
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="resumen" class="form-label">Calle</label>
+                      <input id="resumen" type="text" placeholder="Sarasota" class="form-control">
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="idioma" class="form-label">Carrera</label>
+                      <input id="idioma" type="text" placeholder="Español,english...." class="form-control">
+                    </div>
+    
+                    
+    
+                    <div>
+                      <button onclick="GenerarCv()" type="button" class="btn btn-outline-primary float-end ms-4" >Generar CV</button>
+                      <button onclick="Clear()" type="button" class="btn btn-outline-primary float-end" >Limpiar</button>
+                      
+                    </div>
+    
+                </div>
+              </div>
+            </div>
+    
+            <div>
+              <div class="col-12 col-sm-12 col-md-3" id="showCards">
+    
+              </div>
+            
+    
+          </div>
+    </main>
+    
+</body>
+</html>
